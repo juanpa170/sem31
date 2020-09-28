@@ -1,0 +1,61 @@
+<html>
+<style type="text/css">
+.a{
+background-color: # 4CAF50; / * * Verde /
+border: none;
+color: blanco;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+</style>
+
+<body>
+
+
+<audio  id="s1"  src="tigrerugido.mp3" autoplay preload></audio>
+
+<audio  id="s2"  src="ladridoperro.mp3" autoplay preload></audio>
+
+<audio  id="s3"  src="rugidooso.mp3" autoplay preload></audio>
+
+<audio  id="s4"  src="aullidolobo.mp3" autoplay preload></audio>
+
+<audio  id="s5"  src="cerdo.mp3" autoplay preload></audio>
+
+<div class="c">
+    <button onclick="document.getElementById('s1').play()">rugido de tigre</button>
+    <button onclick="document.getElementById('s1').pause()">Pausa</button>
+    <button onclick="document.getElementById('s1').load()">Stop</button>
+</div>
+<div>
+    <button onclick="document.getElementById('s2').play()">perro</button>
+    <button onclick="document.getElementById('s2').pause()">Pausa</button>
+    <button onclick="document.getElementById('s2').load()">Stop</button>
+</div>
+<div>
+    <button onclick="document.getElementById('s3').play()">oso</button>
+    <button onclick="document.getElementById('s3').pause()">Pausa</button>
+    <button onclick="document.getElementById('s3').load()">Stop</button>
+</div>
+<div>
+    <button onclick="document.getElementById('s4').play()">aullido de lobo</button>
+    <button onclick="document.getElementById('s4').pause()">Pausa</button>
+    <button onclick="document.getElementById('s4').load()">Stop</button>
+</div>
+<div>
+    <button onclick="document.getElementById('s5').play()">cerdo</button>
+    <button onclick="document.getElementById('s5').pause()">Pausa</button>
+    <button onclick="document.getElementById('s5').load()">Stop</button>
+</div>
+
+
+<div>
+    <button onclick="document.getElementById('s5').volume += .1;document.getElementById('s4').volume += .1;document.getElementById('s3').volume += .1;document.getElementById('s2').volume += .1;document.getElementById('s1').volume += .1">+</button>
+    <button onclick="document.getElementById('s5').volume -= .1;document.getElementById('s4').volume -= .1;document.getElementById('s3').volume -= .1;document.getElementById('s2').volume -= .1;document.getElementById('s1').volume -= .1">-</button>
+</div>
+
+</body>
+</html>
